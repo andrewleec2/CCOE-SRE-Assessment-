@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1800" viewBox="0 0 2400 1800" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="ml" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2d3d"/></marker>
+<marker id="mls" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2d3d"/></marker>
+<marker id="mr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a6fb0"/></marker>
+<marker id="mrs" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a6fb0"/></marker>
+</defs>
+<rect x="0" y="0" width="2400" height="1800" rx="0" fill="#ffffff" fill-opacity="1" stroke="none" stroke-width="0"/>
+<text x="40" y="48" font-size="26" font-weight="bold" fill="#1b2631" text-anchor="start">Selected cloud: AWS  |  Tier 1 Digital Service: Multi-Region Reliability Architecture</text>
+<text x="40" y="76" font-size="15" font-weight="normal" fill="#566573" text-anchor="start">Active primary + warm standby | trust boundaries, traffic flow, failure domains, security controls | [P1] to [P4] map controls to the scenario problems</text>
+<rect x="40" y="100" width="250" height="170" rx="8" fill="#fdf2f1" fill-opacity="1" stroke="#c0392b" stroke-width="2"/>
+<text x="52" y="122" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="start">TRUST BOUNDARY 0: Internet</text>
+<text x="52" y="139" font-size="12" font-weight="normal" fill="#c0392b" text-anchor="start">(untrusted)</text>
+<rect x="60" y="160" width="210" height="70" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/>
+<text x="165.0" y="191.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Customers</text>
+<text x="165.0" y="208.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Client applications</text>
+<rect x="320" y="100" width="2040" height="170" rx="8" fill="#fff8ec" fill-opacity="1" stroke="#c77c0e" stroke-width="2"/>
+<text x="332" y="122" font-size="13" font-weight="bold" fill="#c77c0e" text-anchor="start">TRUST BOUNDARY 1: AWS Global Edge  |  Failure domain: global (data plane in every edge location)</text>
+<rect x="380" y="145" width="300" height="100" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c77c0e" stroke-width="1.6"/>
+<text x="530.0" y="174.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon CloudFront</text>
+<text x="530.0" y="191.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ AWS WAF (web ACL)</text>
+<text x="530.0" y="208.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">TLS 1.2+, managed rules,</text>
+<text x="530.0" y="225.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">rate-based rules, geo rules</text>
+<rect x="1060" y="135" width="280" height="100" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c77c0e" stroke-width="1.6"/>
+<text x="1200.0" y="172.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Route 53 api-origin record</text>
+<text x="1200.0" y="189.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Failover record set,</text>
+<text x="1200.0" y="206.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">gated by ARC routing control</text>
+<rect x="1440" y="135" width="420" height="120" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c77c0e" stroke-width="1.6"/>
+<text x="1650.0" y="174.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon Application Recovery Controller (ARC)</text>
+<text x="1650.0" y="191.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Region switch plan + routing controls</text>
+<text x="1650.0" y="208.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ safety rules (never both off)</text>
+<text x="1650.0" y="225.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P3] scripted, rehearsed failover</text>
+<rect x="1940" y="145" width="390" height="100" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/>
+<text x="2135.0" y="174.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS Shield Advanced</text>
+<text x="2135.0" y="191.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">DDoS protection for CloudFront,</text>
+<text x="2135.0" y="208.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Route 53 and regional endpoints</text>
+<text x="2135.0" y="225.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ AWS Shield Response Team</text>
+<polyline points="270,195 380,195" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="325" y="188" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">HTTPS</text>
+<polyline points="680,175 1060,175" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="870" y="168" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">origin lookup</text>
+<rect x="720" y="200" width="300" height="58" rx="6" fill="#eefaf6" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="870.0" y="217.0" font-size="12" font-weight="bold" fill="#1b2631" text-anchor="middle">CloudFront real-time logs</text>
+<text x="870.0" y="233.0" font-size="12" font-weight="normal" fill="#1b2631" text-anchor="middle">to Kinesis Data Streams: per-CUJ</text>
+<text x="870.0" y="249.0" font-size="12" font-weight="normal" fill="#1b2631" text-anchor="middle">SLI metrics each minute [P1]</text>
+<polyline points="680,229 720,229" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1440,185 1340,185" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="1390" y="178" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">controls</text>
+<rect x="40" y="320" width="1000" height="1010" rx="8" fill="#f3fbf6" fill-opacity="1" stroke="#1e8449" stroke-width="3"/>
+<text x="54" y="344" font-size="15" font-weight="bold" fill="#1e8449" text-anchor="start">REGION 1: ACTIVE PRIMARY  |  Failure domain: region</text>
+<text x="920" y="372" font-size="11" font-weight="bold" fill="#566573" text-anchor="middle">Regional managed services</text>
+<text x="920" y="386" font-size="11" font-weight="normal" fill="#566573" text-anchor="middle">(outside the VPC)</text>
+<rect x="820" y="398" width="200" height="112" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6"/>
+<text x="920.0" y="424.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon API Gateway</text>
+<text x="920.0" y="441.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">REST, Regional, WAF,</text>
+<text x="920.0" y="458.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">JWT authorizer</text>
+<text x="920.0" y="475.5" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] token bucket</text>
+<text x="920.0" y="492.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">throttling, usage plans</text>
+<rect x="820" y="525" width="200" height="80" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/>
+<text x="920.0" y="552.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS Secrets Manager</text>
+<text x="920.0" y="569.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ AWS KMS customer</text>
+<text x="920.0" y="586.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">managed key</text>
+<rect x="820" y="625" width="200" height="100" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6"/>
+<text x="920.0" y="662.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon DynamoDB</text>
+<text x="920.0" y="679.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Idempotency keys</text>
+<text x="920.0" y="696.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Global Table, KMS</text>
+<rect x="820" y="742" width="200" height="92" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6"/>
+<text x="920.0" y="767.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS AppConfig</text>
+<text x="920.0" y="784.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] brownout flags,</text>
+<text x="920.0" y="801.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">maintenance mode,</text>
+<text x="920.0" y="818.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">failover endpoints</text>
+<rect x="60" y="360" width="740" height="950" rx="8" fill="#ffffff" fill-opacity="1" stroke="#34495e" stroke-width="2"/>
+<text x="72" y="380" font-size="13" font-weight="bold" fill="#34495e" text-anchor="start">TRUST BOUNDARY 2: Private VPC  |  Failure domains: 3 Availability Zones</text>
+<rect x="70" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="78" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-a</text>
+<rect x="310" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="318" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-b</text>
+<rect x="550" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="558" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-c</text>
+<rect x="560" y="410" width="220" height="60" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6"/>
+<text x="670.0" y="436.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">API Gateway VPC Link</text>
+<text x="670.0" y="453.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">private integration</text>
+<rect x="78" y="485" width="724" height="285" rx="6" fill="#ffffff" fill-opacity="0.75" stroke="#5d6d7e" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="88" y="503" font-size="12" font-weight="bold" fill="#5d6d7e" text-anchor="start">Private app subnets x3 AZ  |  Security Groups</text>
+<rect x="300" y="515" width="480" height="52" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6"/>
+<text x="540.0" y="537.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Internal NLB (cross-zone)</text>
+<text x="540.0" y="554.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">AWS Load Balancer Controller</text>
+<rect x="110" y="585" width="500" height="170" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6"/>
+<text x="360.0" y="640.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon EKS microservices + Istio (Envoy sidecars)</text>
+<text x="360.0" y="657.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">mTLS, IRSA, PDBs, AZ topology spread</text>
+<text x="360.0" y="674.5" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] retry budget (20% of active requests), deadlines,</text>
+<text x="360.0" y="691.5" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] outlier detection, per-provider bulkheads,</text>
+<text x="360.0" y="708.5" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] adaptive load shedding</text>
+<rect x="628" y="600" width="158" height="145" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/>
+<text x="707.0" y="643.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">VPC Endpoints</text>
+<text x="707.0" y="660.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Gateway: DynamoDB</text>
+<text x="707.0" y="677.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Interface: Secrets</text>
+<text x="707.0" y="694.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Manager, KMS, ECR,</text>
+<text x="707.0" y="711.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">STS, AppConfig</text>
+<rect x="78" y="790" width="724" height="320" rx="6" fill="#ffffff" fill-opacity="0.8" stroke="#2e86c1" stroke-width="1.8"/>
+<text x="88" y="1103" font-size="12" font-weight="bold" fill="#2e86c1" text-anchor="start">TRUST BOUNDARY 3: Isolated data subnets x3 AZ  |  no route to internet</text>
+<rect x="110" y="825" width="220" height="90" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6"/>
+<text x="220.0" y="857.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon RDS Proxy</text>
+<text x="220.0" y="874.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">IAM auth,</text>
+<text x="220.0" y="891.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">connection pooling</text>
+<rect x="400" y="825" width="380" height="90" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6"/>
+<text x="590.0" y="857.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon Aurora Global Database</text>
+<text x="590.0" y="874.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Writer AZ-a, reader AZ-b, KMS</text>
+<text x="590.0" y="891.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ transactional outbox table</text>
+<rect x="110" y="960" width="670" height="105" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6"/>
+<text x="445.0" y="1000.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon MSK (brokers across 3 AZs)</text>
+<text x="445.0" y="1017.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">TLS + IAM auth | retry topics 1, 5, 30 min | DLQ topic + redrive</text>
+<text x="445.0" y="1034.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] consumer backoff + jitter, bounded redelivery</text>
+<rect x="78" y="1135" width="724" height="160" rx="6" fill="#ffffff" fill-opacity="0.75" stroke="#5d6d7e" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="102" y="1153" font-size="12" font-weight="bold" fill="#5d6d7e" text-anchor="start">Egress subnets x3 AZ</text>
+<rect x="300" y="1185" width="480" height="80" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6"/>
+<text x="540.0" y="1212.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS Network Firewall</text>
+<text x="540.0" y="1229.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">FQDN allowlist to provider endpoints only</text>
+<text x="540.0" y="1246.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ NAT Gateway per AZ</text>
+<polyline points="820,440 780,440" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="670,470 670,515" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="450,567 450,585" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="610,672 628,672" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="786,690 820,690" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="786,620 803,620 803,565 820,565" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="786,730 803,730 803,788 820,788" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="220,755 220,825" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="330,870 400,870" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="590,915 590,960" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="598" y="942" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">outbox relay</text>
+<polyline points="365,755 365,960" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" marker-start="url(#mls)" stroke-linejoin="round"/>
+<text x="372" y="935" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">produce /</text>
+<text x="372" y="949" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">consume</text>
+<polyline points="110,700 92,700 92,1225 300,1225" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="98" y="1210" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">egress only</text>
+<rect x="1360" y="320" width="1000" height="1010" rx="8" fill="#f6f7f8" fill-opacity="1" stroke="#7b8a8b" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="1374" y="344" font-size="15" font-weight="bold" fill="#7b8a8b" text-anchor="start">REGION 2: WARM STANDBY  |  Failure domain: region</text>
+<text x="1480" y="372" font-size="11" font-weight="bold" fill="#566573" text-anchor="middle">Regional managed services</text>
+<text x="1480" y="386" font-size="11" font-weight="normal" fill="#566573" text-anchor="middle">(outside the VPC)</text>
+<rect x="1380" y="398" width="200" height="112" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1480.0" y="433.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon API Gateway</text>
+<text x="1480.0" y="450.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">REST, Regional</text>
+<text x="1480.0" y="467.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">identical WAF, authorizer</text>
+<text x="1480.0" y="484.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">and throttling config</text>
+<rect x="1380" y="525" width="200" height="80" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1480.0" y="561.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Secrets Manager replica</text>
+<text x="1480.0" y="578.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ KMS multi-Region key</text>
+<rect x="1380" y="625" width="200" height="100" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1480.0" y="662.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon DynamoDB</text>
+<text x="1480.0" y="679.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Global Table replica</text>
+<text x="1480.0" y="696.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">KMS encrypted</text>
+<rect x="1380" y="742" width="200" height="92" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1480.0" y="767.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS AppConfig</text>
+<text x="1480.0" y="784.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">same flags, used to</text>
+<text x="1480.0" y="801.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">repoint producers</text>
+<text x="1480.0" y="818.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">on Region switch</text>
+<rect x="1600" y="360" width="740" height="950" rx="8" fill="#ffffff" fill-opacity="1" stroke="#34495e" stroke-width="2"/>
+<text x="1612" y="380" font-size="13" font-weight="bold" fill="#34495e" text-anchor="start">TRUST BOUNDARY 2: Private VPC  |  Failure domains: 3 Availability Zones</text>
+<rect x="2090" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="2098" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-c</text>
+<rect x="1850" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1858" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-b</text>
+<rect x="1610" y="388" width="240" height="914" rx="4" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1618" y="404" font-size="12" font-weight="bold" fill="#7f8c8d" text-anchor="start">AZ-a</text>
+<rect x="1620" y="410" width="220" height="60" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1730.0" y="436.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">API Gateway VPC Link</text>
+<text x="1730.0" y="453.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">private integration</text>
+<rect x="1598" y="485" width="724" height="285" rx="6" fill="#ffffff" fill-opacity="0.75" stroke="#5d6d7e" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="1608" y="503" font-size="12" font-weight="bold" fill="#5d6d7e" text-anchor="start">Private app subnets x3 AZ  |  Security Groups</text>
+<rect x="1620" y="515" width="480" height="52" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1860.0" y="537.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Internal NLB (cross-zone)</text>
+<text x="1860.0" y="554.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">AWS Load Balancer Controller</text>
+<rect x="1790" y="585" width="500" height="170" rx="6" fill="#ffffff" fill-opacity="1" stroke="#232f3e" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="2040.0" y="649.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon EKS + Istio (Envoy sidecars)</text>
+<text x="2040.0" y="666.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">20% baseline capacity</text>
+<text x="2040.0" y="683.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Karpenter scale-out on failover</text>
+<text x="2040.0" y="700.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">same mesh resilience policy as primary</text>
+<rect x="1614" y="600" width="158" height="145" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1693.0" y="643.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">VPC Endpoints</text>
+<text x="1693.0" y="660.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Gateway: DynamoDB</text>
+<text x="1693.0" y="677.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Interface: Secrets</text>
+<text x="1693.0" y="694.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Manager, KMS, ECR,</text>
+<text x="1693.0" y="711.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">STS, AppConfig</text>
+<rect x="1598" y="790" width="724" height="320" rx="6" fill="#ffffff" fill-opacity="0.8" stroke="#2e86c1" stroke-width="1.8"/>
+<text x="1608" y="1103" font-size="12" font-weight="bold" fill="#2e86c1" text-anchor="start">TRUST BOUNDARY 3: Isolated data subnets x3 AZ  |  no route to internet</text>
+<rect x="2070" y="825" width="220" height="90" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="2180.0" y="857.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon RDS Proxy</text>
+<text x="2180.0" y="874.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">IAM auth,</text>
+<text x="2180.0" y="891.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">connection pooling</text>
+<rect x="1620" y="825" width="380" height="90" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1810.0" y="857.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Aurora Global DB secondary</text>
+<text x="1810.0" y="874.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">read-only until promoted</text>
+<text x="1810.0" y="891.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">outbox replicated with data</text>
+<rect x="1620" y="960" width="670" height="105" rx="6" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1955.0" y="1000.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Amazon MSK (brokers across 3 AZs)</text>
+<text x="1955.0" y="1017.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">MSK Replicator target cluster</text>
+<text x="1955.0" y="1034.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">same topics, translated consumer offsets</text>
+<rect x="1598" y="1135" width="724" height="160" rx="6" fill="#ffffff" fill-opacity="0.75" stroke="#5d6d7e" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="1622" y="1153" font-size="12" font-weight="bold" fill="#5d6d7e" text-anchor="start">Egress subnets x3 AZ</text>
+<rect x="1620" y="1185" width="480" height="80" rx="6" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1860.0" y="1212.5" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS Network Firewall</text>
+<text x="1860.0" y="1229.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">FQDN allowlist to provider endpoints only</text>
+<text x="1860.0" y="1246.5" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">+ NAT Gateway per AZ</text>
+<polyline points="1580,440 1620,440" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1730,470 1730,515" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1950,567 1950,585" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1790,672 1772,672" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1614,690 1580,690" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1614,620 1597,620 1597,565 1580,565" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1614,730 1597,730 1597,788 1580,788" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="2180,755 2180,825" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="2070,870 2000,870" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1810,915 1810,960" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="1802" y="942" font-size="11" font-weight="normal" fill="#566573" text-anchor="end">outbox relay</text>
+<polyline points="2035,755 2035,960" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" marker-start="url(#mls)" stroke-linejoin="round"/>
+<text x="2028" y="935" font-size="11" font-weight="normal" fill="#566573" text-anchor="end">produce /</text>
+<text x="2028" y="949" font-size="11" font-weight="normal" fill="#566573" text-anchor="end">consume</text>
+<polyline points="2290,700 2308,700 2308,1225 2100,1225" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="2302" y="1210" font-size="11" font-weight="normal" fill="#566573" text-anchor="end">egress only</text>
+<polyline points="1175,235 1175,440 1020,440" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="1132" y="300" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">active</text>
+<polyline points="1225,235 1225,440 1380,440" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="1272" y="296" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">after ARC</text>
+<text x="1272" y="311" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">switch</text>
+<polyline points="1650,255 1650,320" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="1660" y="292" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">executes DR plan in Region 2</text>
+<text x="1200" y="652" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">DynamoDB Global Tables</text>
+<text x="1200" y="667" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">bidirectional, typical lag ~1s</text>
+<polyline points="1020,690 1380,690" fill="none" stroke="#1a6fb0" stroke-width="3.2" marker-end="url(#mr)" marker-start="url(#mrs)" stroke-linejoin="round"/>
+<text x="1200" y="847" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">Aurora Global Database</text>
+<text x="1200" y="862" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">async storage replication, lag typically &lt; 1s</text>
+<polyline points="780,885 1620,885" fill="none" stroke="#1a6fb0" stroke-width="3.2" marker-end="url(#mr)" stroke-linejoin="round"/>
+<text x="1200" y="992" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">MSK Replicator</text>
+<text x="1200" y="1007" font-size="12" font-weight="bold" fill="#1a6fb0" text-anchor="middle">topics + consumer group offsets</text>
+<polyline points="780,1030 1620,1030" fill="none" stroke="#1a6fb0" stroke-width="3.2" marker-end="url(#mr)" stroke-linejoin="round"/>
+<rect x="1060" y="1150" width="280" height="170" rx="8" fill="#fdf2f1" fill-opacity="1" stroke="#c0392b" stroke-width="2"/>
+<text x="1200" y="1170" font-size="12" font-weight="bold" fill="#c0392b" text-anchor="middle">TRUST BOUNDARY 0: Internet</text>
+<rect x="1080" y="1182" width="240" height="52" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/>
+<text x="1200.0" y="1204.0" font-size="12" font-weight="bold" fill="#1b2631" text-anchor="middle">External Provider 1</text>
+<text x="1200.0" y="1220.0" font-size="12" font-weight="normal" fill="#1b2631" text-anchor="middle">SLA-tracked dependency</text>
+<rect x="1080" y="1248" width="240" height="52" rx="6" fill="#ffffff" fill-opacity="1" stroke="#c0392b" stroke-width="1.6"/>
+<text x="1200.0" y="1270.0" font-size="12" font-weight="bold" fill="#1b2631" text-anchor="middle">External Provider 2</text>
+<text x="1200.0" y="1286.0" font-size="12" font-weight="normal" fill="#1b2631" text-anchor="middle">SLA-tracked dependency</text>
+<polyline points="780,1225 1080,1208" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="780,1225 1080,1274" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="925" y="1172" font-size="11" font-weight="bold" fill="#b03a2e" text-anchor="middle">circuit breaker, timeout,</text>
+<text x="925" y="1186" font-size="11" font-weight="bold" fill="#b03a2e" text-anchor="middle">capped retries + jitter</text>
+<polyline points="1620,1225 1320,1208" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1620,1225 1320,1274" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<rect x="40" y="1375" width="2320" height="225" rx="8" fill="#eefaf6" fill-opacity="1" stroke="#117a65" stroke-width="2"/>
+<text x="54" y="1398" font-size="14" font-weight="bold" fill="#117a65" text-anchor="start">RELIABILITY CONTROL PLANE  |  cross-region, out of band from the request path</text>
+<rect x="58" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="237.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">CloudWatch Synthetics</text>
+<text x="237.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Canaries on critical customer</text>
+<text x="237.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">journeys, through CloudFront</text>
+<text x="237.0" y="1509.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">and per region</text>
+<text x="237.0" y="1526.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P1] detect customer impact</text>
+<polyline points="416,1487 442,1487" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<rect x="442" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="621.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Telemetry pipeline</text>
+<text x="621.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">ADOT to Amazon Managed Service</text>
+<text x="621.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">for Prometheus, AWS X-Ray,</text>
+<text x="621.0" y="1509.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Amazon CloudWatch Logs</text>
+<text x="621.0" y="1526.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">RED metrics per service + provider</text>
+<polyline points="800,1487 826,1487" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<rect x="826" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="1005.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">SLOs + burn-rate alerts</text>
+<text x="1005.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Multi-window, multi-burn-rate</text>
+<text x="1005.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">on availability and latency SLIs</text>
+<text x="1005.0" y="1509.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Amazon Managed Grafana</text>
+<text x="1005.0" y="1526.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P1] page on symptoms only</text>
+<polyline points="1184,1487 1210,1487" fill="none" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)" stroke-linejoin="round"/>
+<rect x="1210" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="1389.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Alert routing + RPO guard</text>
+<text x="1389.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">CloudWatch Alarms to SNS to on-call</text>
+<text x="1389.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">linked runbooks, cause alerts demoted</text>
+<text x="1389.0" y="1509.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P3] replication lag alarm at 60s</text>
+<text x="1389.0" y="1526.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">(Aurora, MSK Replicator, DynamoDB)</text>
+<rect x="1594" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="1773.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">AWS Fault Injection Service</text>
+<text x="1773.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">AZ, provider and region</text>
+<text x="1773.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">experiments in staging + prod</text>
+<text x="1773.0" y="1509.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P2] retry storm game days</text>
+<text x="1773.0" y="1526.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P3] quarterly end-to-end DR</text>
+<rect x="1978" y="1420" width="358" height="135" rx="6" fill="#ffffff" fill-opacity="1" stroke="#117a65" stroke-width="1.6"/>
+<text x="2157.0" y="1458.0" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="middle">Operating model</text>
+<text x="2157.0" y="1475.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Named service owner per SLO</text>
+<text x="2157.0" y="1492.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">Error budget policy gates releases</text>
+<text x="2157.0" y="1509.0" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="middle">SRE as enabler, shared backlog</text>
+<text x="2157.0" y="1526.0" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="middle">[P4] clear reliability ownership</text>
+<text x="1200" y="1582" font-size="12" font-weight="normal" fill="#566573" text-anchor="middle">Telemetry flows out of both regions; canaries probe the edge and each regional endpoint; FIS experiments target both regions.</text>
+<polyline points="540,1375 540,1330" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<polyline points="1860,1375 1860,1330" fill="none" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)" stroke-linejoin="round"/>
+<text x="552" y="1360" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">telemetry out / faults in</text>
+<text x="1872" y="1360" font-size="11" font-weight="normal" fill="#566573" text-anchor="start">telemetry out / faults in</text>
+<text x="40" y="1628" font-size="14" font-weight="bold" fill="#1b2631" text-anchor="start">Legend</text>
+<line x1="40" y1="1650" x2="110" y2="1650" stroke="#1f2d3d" stroke-width="1.6" marker-end="url(#ml)"/>
+<text x="120" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Live request path</text>
+<line x1="290" y1="1650" x2="360" y2="1650" stroke="#1f2d3d" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#ml)"/>
+<text x="370" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Standby / failover path</text>
+<line x1="570" y1="1650" x2="640" y2="1650" stroke="#1a6fb0" stroke-width="3.2" marker-end="url(#mr)"/>
+<text x="650" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Async cross-region replication</text>
+<rect x="900" y="1640" width="22" height="18" rx="3" fill="#f6effa" fill-opacity="1" stroke="#7d3c98" stroke-width="1.5"/>
+<text x="930" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Security control</text>
+<rect x="1070" y="1640" width="22" height="18" rx="3" fill="#eef5fc" fill-opacity="1" stroke="#2e86c1" stroke-width="1.5"/>
+<text x="1100" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Data store</text>
+<rect x="1210" y="1640" width="22" height="18" rx="3" fill="#fbfcfc" fill-opacity="1" stroke="#aab7b8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="1240" y="1655" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Availability Zone (failure domain)</text>
+<text x="40" y="1690" font-size="13" font-weight="bold" fill="#b03a2e" text-anchor="start">Scenario mapping:</text>
+<text x="180" y="1690" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">[P1] slow detection of customer impact   [P2] retry storms caused two regional incidents   [P3] DR never exercised end to end   [P4] unclear reliability ownership</text>
+<text x="40" y="1720" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="start">Targets:</text>
+<text x="110" y="1720" font-size="13" font-weight="normal" fill="#1b2631" text-anchor="start">Customer journey availability 99.99% (error budget about 4.3 min per 30 days, 52.6 min per year)  |  RTO 45 min via rehearsed ARC Region switch plan  |  RPO 5 min: async replication typically seconds, alarmed at 60s lag</text>
+<text x="40" y="1746" font-size="13" font-weight="bold" fill="#1b2631" text-anchor="start">Design note:</text>
+<text x="130" y="1746" font-size="13" font-weight="normal" fill="#566573" text-anchor="start">AZ failures are absorbed in-region with no failover (the 99.99% budget cannot afford a 45 min regional cutover often). Istio on EKS is used because AWS App Mesh reached end of support on 30 Sep 2026</text>
+<text x="130" y="1766" font-size="13" font-weight="normal" fill="#566573" text-anchor="start">and Amazon VPC Lattice does not provide retry budgets or outlier detection; external providers sit behind fallbacks so their availability does not cap the journey SLO.</text>
+</svg>
